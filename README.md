@@ -55,6 +55,14 @@ composer install
 
 ### 4. Gerar a chave da aplicação e rodar as migrações com seed
 
+```
+⚠️ Atenção: Antes de continuar, verifique se o usuário do banco de dados configurado no .env possui permissões adequadas para:
+
+Criar banco de dados e tabelas
+
+Inserir, atualizar e excluir dados
+```
+
 ```bash
 php artisan key:generate
 php artisan migrate --seed
