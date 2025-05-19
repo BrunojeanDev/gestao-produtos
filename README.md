@@ -20,7 +20,8 @@ Sistema web para gerenciamento de produtos, categorias e marcas com controle de 
   - `json`
 
 ### Frontend
-- HTML, CSS e JavaScript puros (sem frameworks como Bootstrap)
+- HTML, CSS e JavaScript 
+- Bootstrap
 - Font Awesome 6.5.0 (via CDN)
 - jQuery 3.7.1 (via CDN)
 
@@ -31,7 +32,7 @@ Sistema web para gerenciamento de produtos, categorias e marcas com controle de 
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/gestao-produtos.git
+git clone https://github.com/BrunojeanDev/gestao-produtos.git
 cd gestao-produtos
 cp .env.example .env
 ```
@@ -84,10 +85,3 @@ Acesse a aplicação em: [http://localhost:8000](http://localhost:8000)
 - Após autenticação:
   - **Administradores** são direcionados ao painel completo.
   - **Usuários comuns** acessam um dashboard básico (com restrições conforme permissões atribuídas).
-
----
-
-## 📌 Observações
-
-- O projeto utiliza autenticação padrão do Laravel Breeze, com layout customizado (sem Tailwind).
-- A interface é leve e responsiva, utilizando apenas jQuery e Font Awesome.
