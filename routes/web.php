@@ -29,12 +29,11 @@ Route::get('/', function () {
     return redirect()->route('login');
 });
 
-// Logout (precisa do Auth importado)
 Route::post('/logout', function () {
     Auth::logout();
     request()->session()->invalidate();
     request()->session()->regenerateToken();
-    return redirect('/'); // Redireciona para login após logout
+    return redirect('/'); 
 })->name('logout')->middleware('auth');
 
 /*
@@ -83,7 +82,6 @@ Route::middleware(['auth'])->group(function () {
         })->name('usuarios.create');
 
         Route::resource('usuarios', UserController::class)->except(['show', 'create']);
-
         // Gerenciar perfil
         Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
         Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
