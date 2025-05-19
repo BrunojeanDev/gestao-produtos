@@ -70,9 +70,9 @@ php artisan migrate --seed
 
 ### 5. Iniciar o servidor de desenvolvimento
 
-bash
+```bash
 php artisan serve
-
+```
 
 🔎 O terminal mostrará a URL em que o servidor foi iniciado, por padrão http://127.0.0.1:8000.  
 Caso a porta 8000 esteja em uso, o Laravel usará automaticamente a próxima porta disponível, como 8001 ou 8002.
